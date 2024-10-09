@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="./index.js" defer></script>
+</head>
+<body class="h-lvh">
+  <div class="text-center">
+    <h1 class="font-medium text-lime-950 text-3xl p-3">Tic-Tac-Toe</h1>
+  </div>
+  <div class="flex items-center justify-center flex-col" id="form">
+    <h3 class="text-lime-950 text-lg mx-3">Player X, enter your name:</h3>
+    <input type="text" name="pxname" id="pxname" class="p-1 bg-gray-200 w-[300px]">
+    <h3 class="text-lime-950 text-lg mx-3 mt-3">Player O, enter your name:</h3>
+    <input type="text" name="poname" id="poname" class="p-1 bg-gray-200 w-[300px]">
+    <button class="text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-3 w-[295px] mb-4" id="play-btn">Play!</button>
+  </div>
+  <div class="grid grid-cols-3 grid-rows-3 w-[300px] h-[300px] mx-auto border border-gray-300 mt-4" id="board" >
+    <div class="border-b border-r border-gray-300 hover:bg-gray-300 text-center text-8xl" data-boardindex="0"></div>
+    <div class="border-b border-r border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="1"></div>
+    <div class="border-b border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="2"></div>
+    <div class="border-b border-r border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="3"></div>
+    <div class="border-b border-r border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="4"></div>
+    <div class="border-b border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="5"></div>
+    <div class="border-r border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="6"></div>
+    <div class="border-r border-gray-300 hover:bg-gray-300 text-8xl text-center" data-boardindex="7"></div>
+    <div class="hover:bg-gray-300 text-8xl text-center" data-boardindex="8"></div>
+  </div>
+  <div id="currentplayer" class="text-center mt-3 ">
+  </div>
+  <div id="announce" class="text-center mt-3">
+  </div>
+  <div class="flex justify-center">
+    <button class="text-gray-900 bg-white border border-gray-300  hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mt-3 w-[295px] mb-4 hidden" id="restart-btn">Restart Game</button>
+  </div>
+</body>
+</html>
